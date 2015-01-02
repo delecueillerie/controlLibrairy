@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="MIViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m7W-2h-jhD"/>
+                        <viewControllerLayoutGuide type="bottom" id="zoI-9k-XaT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KvI-IC-SZz">
+                                <rect key="frame" x="118" y="118" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" image="buttonStop64.png">
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GwO-i5-PXR">
+                                <rect key="frame" x="51" y="34" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="switchEditing:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8u6-g8-Xiu"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="GwO-i5-PXR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="51" id="1qM-Eb-XbX"/>
+                            <constraint firstAttribute="centerX" secondItem="KvI-IC-SZz" secondAttribute="centerX" id="2XC-rK-ooV"/>
+                            <constraint firstItem="GwO-i5-PXR" firstAttribute="top" secondItem="m7W-2h-jhD" secondAttribute="bottom" constant="14" id="frg-6Y-gPl"/>
+                            <constraint firstAttribute="centerY" secondItem="KvI-IC-SZz" secondAttribute="centerY" id="vXi-nM-lc0"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JUY-dY-9tn" appends="YES" id="rV9-4X-prh"/>
+                            <outletCollection property="gestureRecognizers" destination="DiW-iG-Esb" appends="YES" id="2J5-nN-zXK"/>
+                        </connections>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
+                    <connections>
+                        <outlet property="button" destination="KvI-IC-SZz" id="Q1x-fr-4SM"/>
+                        <outlet property="switchControl" destination="GwO-i5-PXR" id="g7R-87-e6f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="DiW-iG-Esb">
+                    <connections>
+                        <action selector="swipeGestureLeft:" destination="vXZ-lx-hvc" id="s2f-75-J56"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="bJF-xm-OZf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="JUY-dY-9tn">
+                    <connections>
+                        <action selector="swipeGestureRight:" destination="vXZ-lx-hvc" id="R3E-GX-dFu"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="PBD-yx-teT"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+        <!--MicrophoneUI-->
+        <scene sceneID="Ifk-lc-gi6">
+            <objects>
+                <viewController storyboardIdentifier="microphone" id="xcZ-Lv-ray" customClass="MIMicrophoneUI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OVx-sE-Ko7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Act-4P-fGW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EYJ-Gp-PPN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speak now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B60-Hp-7hC">
+                                <rect key="frame" x="111" y="152" width="99" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htC-vc-2T2">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="lPp-De-jKR"/>
+                                    <constraint firstAttribute="width" constant="200" id="vNC-Vu-PQz"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone128.png" translatesAutoresizingMaskIntoConstraints="NO" id="wb3-bE-ah9">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5Bg-nV-dYn"/>
+                                    <constraint firstAttribute="height" constant="200" id="Mkc-We-TYq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-ss-M0q">
+                                <rect key="frame" x="136" y="392" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="controlCancel:" destination="xcZ-Lv-ray" eventType="touchUpInside" id="ztH-1C-GmR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="B60-Hp-7hC" secondAttribute="centerX" id="AVW-Jn-QZZ"/>
+                            <constraint firstItem="vxF-ss-M0q" firstAttribute="top" secondItem="wb3-bE-ah9" secondAttribute="bottom" constant="8" id="BZq-Gg-AB1"/>
+                            <constraint firstAttribute="centerX" secondItem="htC-vc-2T2" secondAttribute="centerX" id="Q4v-Lf-gOR"/>
+                            <constraint firstAttribute="centerY" secondItem="htC-vc-2T2" secondAttribute="centerY" id="gul-eb-GIH"/>
+                            <constraint firstAttribute="centerY" secondItem="wb3-bE-ah9" secondAttribute="centerY" id="hkQ-wj-cEh"/>
+                            <constraint firstItem="wb3-bE-ah9" firstAttribute="top" secondItem="B60-Hp-7hC" secondAttribute="bottom" constant="8" id="kbF-SJ-AgT"/>
+                            <constraint firstAttribute="centerX" secondItem="vxF-ss-M0q" secondAttribute="centerX" id="nRK-mm-8pq"/>
+                            <constraint firstAttribute="centerX" secondItem="wb3-bE-ah9" secondAttribute="centerX" id="uxg-zO-aho"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewBackgroundColor" destination="htC-vc-2T2" id="q62-cP-FTk"/>
+                        <outlet property="viewMicrophoneImage" destination="wb3-bE-ah9" id="Esu-C8-Bnh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCM-pP-c95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1234" y="283"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonStop64.png" width="64" height="64"/>
+        <image name="microphone128.png" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

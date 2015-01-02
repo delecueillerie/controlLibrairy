@@ -6,25 +6,56 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		091831A21940C69500E93371 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 091831A31940C69500E93371 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				091831A81940C6FE00E93371 /* MultiPlatform Build */,
+			);
+			dependencies = (
+				091832501941145400E93371 /* PBXTargetDependency */,
+				091831A71940C6BF00E93371 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		091831171940BDDA00E93371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091831161940BDDA00E93371 /* Foundation.framework */; };
-		0918311C1940BDDA00E93371 /* controlLibrairy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0918311B1940BDDA00E93371 /* controlLibrairy.h */; };
-		0918311E1940BDDA00E93371 /* controlLibrairy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0918311D1940BDDA00E93371 /* controlLibrairy.m */; };
-		091831251940BDDA00E93371 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091831241940BDDA00E93371 /* XCTest.framework */; };
-		091831261940BDDA00E93371 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091831161940BDDA00E93371 /* Foundation.framework */; };
-		091831281940BDDA00E93371 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091831271940BDDA00E93371 /* UIKit.framework */; };
-		0918312B1940BDDA00E93371 /* libcontrolLibrairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091831131940BDDA00E93371 /* libcontrolLibrairy.a */; };
-		091831311940BDDA00E93371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0918312F1940BDDA00E93371 /* InfoPlist.strings */; };
-		091831331940BDDA00E93371 /* controlLibrairyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 091831321940BDDA00E93371 /* controlLibrairyTests.m */; };
+		0918313D1940BE1600E93371 /* controlLibrairy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0918311B1940BDDA00E93371 /* controlLibrairy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		091831471940BF6100E93371 /* MIMicrophoneUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 091831411940BF6100E93371 /* MIMicrophoneUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		091831481940BF6100E93371 /* MIMicrophoneUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 091831421940BF6100E93371 /* MIMicrophoneUI.m */; };
+		091831491940BF6100E93371 /* FDSoundActivatedRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 091831431940BF6100E93371 /* FDSoundActivatedRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0918314A1940BF6100E93371 /* FDSoundActivatedRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 091831441940BF6100E93371 /* FDSoundActivatedRecorder.m */; };
+		091832441941129E00E93371 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091832431941129E00E93371 /* CoreFoundation.framework */; };
+		0918324A1941129E00E93371 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 091832481941129E00E93371 /* InfoPlist.strings */; };
+		094F9BEF1941FE08000215E8 /* MIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 094F9BED1941FE08000215E8 /* MIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		094F9BF01941FE08000215E8 /* MIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094F9BEE1941FE08000215E8 /* MIViewController.m */; };
+		09D2FDCE19412667005451CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09D2FDCD19412667005451CF /* Main.storyboard */; };
+		09D2FDD319412682005451CF /* buttonStop64.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2FDCF19412682005451CF /* buttonStop64.png */; };
+		09D2FDD419412682005451CF /* microphone64.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2FDD019412682005451CF /* microphone64.png */; };
+		09D2FDD519412682005451CF /* microphone128.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2FDD119412682005451CF /* microphone128.png */; };
+		09D2FDD619412682005451CF /* buttonPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 09D2FDD219412682005451CF /* buttonPlay.png */; };
+		09D2FDDF194128FA005451CF /* libcontrolLibrairy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 091831131940BDDA00E93371 /* libcontrolLibrairy.a */; };
+		09D2FE10194141D3005451CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0918323C1941111E00E93371 /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		091831291940BDDA00E93371 /* PBXContainerItemProxy */ = {
+		091831A61940C6BF00E93371 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0918310B1940BDDA00E93371 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 091831121940BDDA00E93371;
 			remoteInfo = controlLibrairy;
+		};
+		0918324F1941145400E93371 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0918310B1940BDDA00E93371 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 091832411941129E00E93371;
+			remoteInfo = controlBundle;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,7 +66,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				0918311C1940BDDA00E93371 /* controlLibrairy.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,13 +76,24 @@
 		091831161940BDDA00E93371 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0918311A1940BDDA00E93371 /* controlLibrairy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "controlLibrairy-Prefix.pch"; sourceTree = "<group>"; };
 		0918311B1940BDDA00E93371 /* controlLibrairy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = controlLibrairy.h; sourceTree = "<group>"; };
-		0918311D1940BDDA00E93371 /* controlLibrairy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = controlLibrairy.m; sourceTree = "<group>"; };
-		091831231940BDDA00E93371 /* controlLibrairyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = controlLibrairyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		091831241940BDDA00E93371 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		091831271940BDDA00E93371 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		0918312E1940BDDA00E93371 /* controlLibrairyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "controlLibrairyTests-Info.plist"; sourceTree = "<group>"; };
-		091831301940BDDA00E93371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		091831321940BDDA00E93371 /* controlLibrairyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = controlLibrairyTests.m; sourceTree = "<group>"; };
+		091831411940BF6100E93371 /* MIMicrophoneUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIMicrophoneUI.h; sourceTree = "<group>"; };
+		091831421940BF6100E93371 /* MIMicrophoneUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMicrophoneUI.m; sourceTree = "<group>"; };
+		091831431940BF6100E93371 /* FDSoundActivatedRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSoundActivatedRecorder.h; sourceTree = "<group>"; };
+		091831441940BF6100E93371 /* FDSoundActivatedRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSoundActivatedRecorder.m; sourceTree = "<group>"; };
+		0918323C1941111E00E93371 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		091832421941129E00E93371 /* controlBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = controlBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		091832431941129E00E93371 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		091832471941129E00E93371 /* controlBundle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "controlBundle-Info.plist"; sourceTree = "<group>"; };
+		091832491941129E00E93371 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0918324B1941129E00E93371 /* controlBundle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "controlBundle-Prefix.pch"; sourceTree = "<group>"; };
+		094F9BED1941FE08000215E8 /* MIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIViewController.h; sourceTree = "<group>"; };
+		094F9BEE1941FE08000215E8 /* MIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIViewController.m; sourceTree = "<group>"; };
+		09D2FDCD19412667005451CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		09D2FDCF19412682005451CF /* buttonStop64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonStop64.png; sourceTree = "<group>"; };
+		09D2FDD019412682005451CF /* microphone64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone64.png; sourceTree = "<group>"; };
+		09D2FDD119412682005451CF /* microphone128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = microphone128.png; sourceTree = "<group>"; };
+		09D2FDD219412682005451CF /* buttonPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonPlay.png; sourceTree = "<group>"; };
+		09D2FE03194138C5005451CF /* controlLibrairy.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = controlLibrairy.bundle; path = ../../../../Desktop/controlLibrairy.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,18 +101,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09D2FE10194141D3005451CF /* UIKit.framework in Frameworks */,
 				091831171940BDDA00E93371 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		091831201940BDDA00E93371 /* Frameworks */ = {
+		0918323F1941129E00E93371 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091831251940BDDA00E93371 /* XCTest.framework in Frameworks */,
-				0918312B1940BDDA00E93371 /* libcontrolLibrairy.a in Frameworks */,
-				091831281940BDDA00E93371 /* UIKit.framework in Frameworks */,
-				091831261940BDDA00E93371 /* Foundation.framework in Frameworks */,
+				09D2FDDF194128FA005451CF /* libcontrolLibrairy.a in Frameworks */,
+				091832441941129E00E93371 /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				091831181940BDDA00E93371 /* controlLibrairy */,
-				0918312C1940BDDA00E93371 /* controlLibrairyTests */,
+				091832451941129E00E93371 /* controlBundle */,
 				091831151940BDDA00E93371 /* Frameworks */,
 				091831141940BDDA00E93371 /* Products */,
 			);
@@ -92,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				091831131940BDDA00E93371 /* libcontrolLibrairy.a */,
-				091831231940BDDA00E93371 /* controlLibrairyTests.xctest */,
+				091832421941129E00E93371 /* controlBundle.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,9 +140,10 @@
 		091831151940BDDA00E93371 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				09D2FE03194138C5005451CF /* controlLibrairy.bundle */,
+				0918323C1941111E00E93371 /* UIKit.framework */,
 				091831161940BDDA00E93371 /* Foundation.framework */,
-				091831241940BDDA00E93371 /* XCTest.framework */,
-				091831271940BDDA00E93371 /* UIKit.framework */,
+				091832431941129E00E93371 /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				0918311B1940BDDA00E93371 /* controlLibrairy.h */,
-				0918311D1940BDDA00E93371 /* controlLibrairy.m */,
+				0918314B1940BF6B00E93371 /* classes */,
 				091831191940BDDA00E93371 /* Supporting Files */,
 			);
 			path = controlLibrairy;
@@ -125,25 +166,72 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0918312C1940BDDA00E93371 /* controlLibrairyTests */ = {
+		0918314B1940BF6B00E93371 /* classes */ = {
 			isa = PBXGroup;
 			children = (
-				091831321940BDDA00E93371 /* controlLibrairyTests.m */,
-				0918312D1940BDDA00E93371 /* Supporting Files */,
+				094F9BED1941FE08000215E8 /* MIViewController.h */,
+				094F9BEE1941FE08000215E8 /* MIViewController.m */,
+				091831411940BF6100E93371 /* MIMicrophoneUI.h */,
+				091831421940BF6100E93371 /* MIMicrophoneUI.m */,
+				091831431940BF6100E93371 /* FDSoundActivatedRecorder.h */,
+				091831441940BF6100E93371 /* FDSoundActivatedRecorder.m */,
 			);
-			path = controlLibrairyTests;
+			name = classes;
 			sourceTree = "<group>";
 		};
-		0918312D1940BDDA00E93371 /* Supporting Files */ = {
+		091832451941129E00E93371 /* controlBundle */ = {
 			isa = PBXGroup;
 			children = (
-				0918312E1940BDDA00E93371 /* controlLibrairyTests-Info.plist */,
-				0918312F1940BDDA00E93371 /* InfoPlist.strings */,
+				09D2FDCD19412667005451CF /* Main.storyboard */,
+				09D2FDD719412692005451CF /* media */,
+				091832461941129E00E93371 /* Supporting Files */,
+			);
+			path = controlBundle;
+			sourceTree = "<group>";
+		};
+		091832461941129E00E93371 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				091832471941129E00E93371 /* controlBundle-Info.plist */,
+				091832481941129E00E93371 /* InfoPlist.strings */,
+				0918324B1941129E00E93371 /* controlBundle-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		09D2FDD719412692005451CF /* media */ = {
+			isa = PBXGroup;
+			children = (
+				09D2FDCF19412682005451CF /* buttonStop64.png */,
+				09D2FDD019412682005451CF /* microphone64.png */,
+				09D2FDD119412682005451CF /* microphone128.png */,
+				09D2FDD219412682005451CF /* buttonPlay.png */,
+			);
+			name = media;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0918313C1940BE0E00E93371 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0918313D1940BE1600E93371 /* controlLibrairy.h in Headers */,
+				094F9BEF1941FE08000215E8 /* MIViewController.h in Headers */,
+				091831471940BF6100E93371 /* MIMicrophoneUI.h in Headers */,
+				091831491940BF6100E93371 /* FDSoundActivatedRecorder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D2FDCB1941246B005451CF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		091831121940BDDA00E93371 /* controlLibrairy */ = {
@@ -153,6 +241,8 @@
 				0918310F1940BDDA00E93371 /* Sources */,
 				091831101940BDDA00E93371 /* Frameworks */,
 				091831111940BDDA00E93371 /* CopyFiles */,
+				0918313C1940BE0E00E93371 /* Headers */,
+				091831A11940C50800E93371 /* Build Framework */,
 			);
 			buildRules = (
 			);
@@ -163,23 +253,23 @@
 			productReference = 091831131940BDDA00E93371 /* libcontrolLibrairy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		091831221940BDDA00E93371 /* controlLibrairyTests */ = {
+		091832411941129E00E93371 /* controlBundle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 091831391940BDDA00E93371 /* Build configuration list for PBXNativeTarget "controlLibrairyTests" */;
+			buildConfigurationList = 0918324C1941129E00E93371 /* Build configuration list for PBXNativeTarget "controlBundle" */;
 			buildPhases = (
-				0918311F1940BDDA00E93371 /* Sources */,
-				091831201940BDDA00E93371 /* Frameworks */,
-				091831211940BDDA00E93371 /* Resources */,
+				0918323E1941129E00E93371 /* Sources */,
+				0918323F1941129E00E93371 /* Frameworks */,
+				091832401941129E00E93371 /* Resources */,
+				09D2FDCB1941246B005451CF /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0918312A1940BDDA00E93371 /* PBXTargetDependency */,
 			);
-			name = controlLibrairyTests;
-			productName = controlLibrairyTests;
-			productReference = 091831231940BDDA00E93371 /* controlLibrairyTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = controlBundle;
+			productName = controlBundle;
+			productReference = 091832421941129E00E93371 /* controlBundle.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,54 +293,97 @@
 			projectRoot = "";
 			targets = (
 				091831121940BDDA00E93371 /* controlLibrairy */,
-				091831221940BDDA00E93371 /* controlLibrairyTests */,
+				091831A21940C69500E93371 /* Framework */,
+				091832411941129E00E93371 /* controlBundle */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		091831211940BDDA00E93371 /* Resources */ = {
+		091832401941129E00E93371 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091831311940BDDA00E93371 /* InfoPlist.strings in Resources */,
+				09D2FDD319412682005451CF /* buttonStop64.png in Resources */,
+				09D2FDD419412682005451CF /* microphone64.png in Resources */,
+				09D2FDD519412682005451CF /* microphone128.png in Resources */,
+				09D2FDD619412682005451CF /* buttonPlay.png in Resources */,
+				0918324A1941129E00E93371 /* InfoPlist.strings in Resources */,
+				09D2FDCE19412667005451CF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		091831A11940C50800E93371 /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport FRAMEWORK_LOCN=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\n\n# Create the path to the real Headers die\nmkdir -p \"${FRAMEWORK_LOCN}/Versions/A/Headers\"\n\n# Create the required symlinks\n/bin/ln -sfh A \"${FRAMEWORK_LOCN}/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${FRAMEWORK_LOCN}/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \\\n\"${FRAMEWORK_LOCN}/${PRODUCT_NAME}\"\n\n# Copy the public headers into the framework\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \\\n\"${FRAMEWORK_LOCN}/Versions/A/Headers\"";
+		};
+		091831A81940C6FE00E93371 /* MultiPlatform Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "MultiPlatform Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\n# If we're already inside this script then die\nif [ -n \"$RW_MULTIPLATFORM_BUILD_IN_PROGRESS\" ]; then\nexit 0\nfi\nexport RW_MULTIPLATFORM_BUILD_IN_PROGRESS=1\n\nRW_FRAMEWORK_NAME=${PROJECT_NAME}\nRW_INPUT_STATIC_LIB=\"lib${PROJECT_NAME}.a\"\nRW_FRAMEWORK_LOCATION=\"${BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework\"\n\nfunction build_static_library {\n    # Will rebuild the static library as specified\n    #     build_static_library sdk\n    xcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" \\\n    -target \"${TARGET_NAME}\" \\\n    -configuration \"${CONFIGURATION}\" \\\n    -sdk \"${1}\" \\\n    ONLY_ACTIVE_ARCH=NO \\\n    BUILD_DIR=\"${BUILD_DIR}\" \\\n    OBJROOT=\"${OBJROOT}\" \\\n    BUILD_ROOT=\"${BUILD_ROOT}\" \\\n    SYMROOT=\"${SYMROOT}\" $ACTION\n}\n\nfunction make_fat_library {\n    # Will smash 2 static libs together\n    #     make_fat_library in1 in2 out\n    xcrun lipo -create \"${1}\" \"${2}\" -output \"${3}\"\n}\n# 1 - Extract the platform (iphoneos/iphonesimulator) from the SDK name\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]; then\nRW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 2 - Extract the version from the SDK\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]; then\nRW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\n# 3 - Determine the other platform\nif [ \"$RW_SDK_PLATFORM\" == \"iphoneos\" ]; then\nRW_OTHER_PLATFORM=iphonesimulator\nelse\nRW_OTHER_PLATFORM=iphoneos\nfi\n\n# 4 - Find the build directory\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$RW_SDK_PLATFORM$ ]]; then\nRW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${RW_OTHER_PLATFORM}\"\nelse\necho \"Could not find other platform build directory.\"\nexit 1\nfi\n\n# Build the other platform.\nbuild_static_library \"${RW_OTHER_PLATFORM}${RW_SDK_VERSION}\"\n\n# If we're currently building for iphonesimulator, then need to rebuild\n#   to ensure that we get both i386 and x86_64\nif [ \"$RW_SDK_PLATFORM\" == \"iphonesimulator\" ]; then\nbuild_static_library \"${SDK_NAME}\"\nfi\n\n# Join the 2 static libs into 1 and push into the .framework\nmake_fat_library \"${BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_INPUT_STATIC_LIB}\" \\\n\"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Ensure that the framework is present in both platform's build directories\ncp -a \"${RW_FRAMEWORK_LOCATION}/Versions/A/${RW_FRAMEWORK_NAME}\" \\\n\"${RW_OTHER_BUILT_PRODUCTS_DIR}/${RW_FRAMEWORK_NAME}.framework/Versions/A/${RW_FRAMEWORK_NAME}\"\n\n# Copy the framework to the user's desktop\nditto \"${RW_FRAMEWORK_LOCATION}\" \"${HOME}/Desktop/${RW_FRAMEWORK_NAME}.framework\"\n\n# Copy the resources bundle to the user's desktop\nditto \"${BUILT_PRODUCTS_DIR}/controlBundle.bundle\" \\\n\"${HOME}/Desktop/controlBundle.bundle\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0918310F1940BDDA00E93371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0918311E1940BDDA00E93371 /* controlLibrairy.m in Sources */,
+				091831481940BF6100E93371 /* MIMicrophoneUI.m in Sources */,
+				094F9BF01941FE08000215E8 /* MIViewController.m in Sources */,
+				0918314A1940BF6100E93371 /* FDSoundActivatedRecorder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0918311F1940BDDA00E93371 /* Sources */ = {
+		0918323E1941129E00E93371 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				091831331940BDDA00E93371 /* controlLibrairyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0918312A1940BDDA00E93371 /* PBXTargetDependency */ = {
+		091831A71940C6BF00E93371 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 091831121940BDDA00E93371 /* controlLibrairy */;
-			targetProxy = 091831291940BDDA00E93371 /* PBXContainerItemProxy */;
+			targetProxy = 091831A61940C6BF00E93371 /* PBXContainerItemProxy */;
+		};
+		091832501941145400E93371 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 091832411941129E00E93371 /* controlBundle */;
+			targetProxy = 0918324F1941145400E93371 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0918312F1940BDDA00E93371 /* InfoPlist.strings */ = {
+		091832481941129E00E93371 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				091831301940BDDA00E93371 /* en */,
+				091832491941129E00E93371 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -329,60 +462,92 @@
 		091831371940BDDA00E93371 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/controlLibrairy.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "controlLibrairy/controlLibrairy-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		091831381940BDDA00E93371 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/controlLibrairy.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "controlLibrairy/controlLibrairy-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PROJECT_NAME)";
 				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
-		0918313A1940BDDA00E93371 /* Debug */ = {
+		091831A41940C69500E93371 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT,
 				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		091831A51940C69500E93371 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SOURCE_ROOT,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0918324D1941129E00E93371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "controlLibrairy/controlLibrairy-Prefix.pch";
+				GCC_PREFIX_HEADER = "controlBundle/controlBundle-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "controlLibrairyTests/controlLibrairyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				INFOPLIST_FILE = "controlBundle/controlBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = controlBundle;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		0918313B1940BDDA00E93371 /* Release */ = {
+		0918324E1941129E00E93371 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "controlLibrairy/controlLibrairy-Prefix.pch";
-				INFOPLIST_FILE = "controlLibrairyTests/controlLibrairyTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				GCC_PREFIX_HEADER = "controlBundle/controlBundle-Prefix.pch";
+				INFOPLIST_FILE = "controlBundle/controlBundle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = controlBundle;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -405,14 +570,25 @@
 				091831381940BDDA00E93371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		091831391940BDDA00E93371 /* Build configuration list for PBXNativeTarget "controlLibrairyTests" */ = {
+		091831A31940C69500E93371 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0918313A1940BDDA00E93371 /* Debug */,
-				0918313B1940BDDA00E93371 /* Release */,
+				091831A41940C69500E93371 /* Debug */,
+				091831A51940C69500E93371 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0918324C1941129E00E93371 /* Build configuration list for PBXNativeTarget "controlBundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0918324D1941129E00E93371 /* Debug */,
+				0918324E1941129E00E93371 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

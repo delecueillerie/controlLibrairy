@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <controlLibrairy/controlLibrairy.h>
+#import <controlLibrairy/MIViewController.h>
 
 @interface controlLibrairy : NSObject
 
